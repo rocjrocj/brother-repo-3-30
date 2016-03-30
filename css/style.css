@@ -172,18 +172,72 @@ footer h4 {
   font-weight: bold;
   color: #263b94;
   text-transform: uppercase;
-  margin: 40px 0;
+  margin: 40px 0 0 0;
   padding: 0; }
 
 footer ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style-type: none; }
+
+footer li {
+  margin: 5px 0;
+  padding: 0; }
+
+footer a, a:hover {
+  color: #4c4c4c; }
+
+footer .nav3Login .txtLog {
+  width: 285px;
+  height: 35px;
+  color: #263b94;
+  font-family: "open-sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-color: #263b94;
+  border-width: 1px;
+  margin: 10px 0;
+  padding: 0;
+  padding-left: 6px; }
+
+footer .nav3Login .butSub {
+  width: 184px;
+  height: 35px;
+  color: #fff;
+  font-family: "open-sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-style: solid;
+  background-color: #263b94;
+  margin: 10px 0;
+  padding: 0;
+  border-radius: 10px; }
+
+footer .fooSoMe {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+  padding: 0; }
+
+footer .fooSoMe ul {
   margin: 0;
   padding: 0; }
 
-footer li {
+footer .fooSoMe li {
   display: inline;
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  margin: 0 0 0 5px;
   padding: 0; }
+
+footer .fooSoMe a {
+  color: #263b94; }
+
+footer .fooCopy {
+  color: #263b94;
+  text-align: center; }
 
 /* helper styles */
 .divFull {
