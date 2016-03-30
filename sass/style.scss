@@ -1,0 +1,302 @@
+/* Sass Document */
+
+/********** vars **********/
+$color-broBlu: #263b94;
+$color-txt: #4c4c4c;
+$color-grey: #ccc;
+$color-white: #fff;
+$color-black: #000;
+$font-main: "myriad-pro", sans-serif;
+$font-second: "open-sans", sans-serif;
+$font-third: "open-sans-condensed", sans-serif;
+
+
+/********** mixins **********/
+@mixin h1 {
+	font-family: $font-third;
+	font-size: 33px;
+	font-weight: bold;
+	color: $color-broBlu;
+	text-transform: uppercase;
+}
+@mixin h2 {
+	font-family: $font-third;
+	font-size: 28px;
+	font-weight: bold;
+	color: $color-broBlu;
+	text-transform: uppercase;
+}
+@mixin h2w {
+	font-family: $font-third;
+	font-size: 28px;
+	font-weight: bold;
+	color: $color-white;
+	text-transform: uppercase;
+}
+@mixin h4 {
+	font-family: $font-third;
+	font-size: 24px;
+	font-weight: bold;
+	color: $color-broBlu;
+	text-transform: uppercase;
+}
+@mixin p1 {
+	font-family: $font-second;
+	font-size: 24px;
+	line-height: 38px;
+	color: $color-txt;
+	padding: 10px 0;
+}
+@mixin p2 {
+	font-family: $font-second;
+	font-size: 18px;
+	line-height: 28px;
+	color: $color-txt;
+	padding: 10px 0;
+}
+@mixin p2w {
+	font-family: $font-second;
+	font-size: 18px;
+	line-height: 28px;
+	color: $color-white;
+	padding: 10px 0;
+}
+@mixin liInline {
+	display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@mixin marC {
+    margin: 0 auto;
+    padding: 0;
+}
+@mixin mar0 {
+    margin: 0;
+    padding: 0;
+}
+@mixin mar5 {
+    margin: 5px;
+    padding: 0;
+}
+@mixin mar5h {
+    margin: 0 5px;
+    padding: 0;
+}
+@mixin mar5hl {
+    margin: 0 0 0 5px;
+    padding: 0;
+}
+@mixin mar5v {
+    margin: 5px 0;
+    padding: 0;
+}
+@mixin mar10 {
+    margin: 10px;
+    padding: 0;
+}
+@mixin mar10h {
+    margin: 0 10px;
+    padding: 0;
+}
+@mixin mar10hl {
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+@mixin mar10v {
+    margin: 10px 0;
+    padding: 0;
+}
+@mixin mar20 {
+    margin: 20px;
+    padding: 0;
+}
+@mixin mar20h {
+    margin: 0 20px;
+    padding: 0;
+}
+@mixin mar20hl {
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+@mixin mar20v {
+    margin: 20px 0;
+    padding: 0;
+}
+@mixin mar40 {
+    margin: 40px;
+    padding: 0;
+}
+@mixin mar40h {
+    margin: 0 40px;
+    padding: 0;
+}
+@mixin mar40v {
+    margin: 40px 0;
+    padding: 0;
+}
+@mixin mar40vb {
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+
+/********** styles **********/
+html, body {
+	position: relative;
+}
+body {
+ 	background-color: $color-white;
+}
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.swiper-slide img {
+	/*width: 100%;
+	height: auto;*/
+}
+
+.logo {
+	@include mar20v;
+}
+nav {
+	@include mar20v;
+}
+.navMain {
+	font-family: $font-third;
+	font-weight: bold;
+	font-size: 28px;
+	color: $color-broBlu;
+	text-align: right;
+	text-transform: uppercase;
+}
+.navMain ul {
+	@include mar0;
+}
+.navMain li {
+	@include liInline;
+	@include mar20hl;
+}
+.navMain a {
+	color: $color-broBlu;
+}
+.navSec {
+	font-family: $font-third;
+	font-size: 30px;
+	color: $color-broBlu;
+	text-align: right;
+}
+.navSec ul {
+	@include mar0;
+}
+.navSec li {
+	@include liInline;
+	@include mar5hl;
+}
+.navSec a {
+	color: $color-broBlu;
+}
+
+.prodSearch {
+	text-align: center;
+	color: $color-broBlu;
+	@include mar20v;
+}
+.prodSearch input {
+	width: 650px;
+	height: 50px;
+	font-family: $font-second;
+	font-size: 22px;
+	text-transform: uppercase;
+    border-style: solid;
+	border-color: $color-broBlu;
+	border-width: 1px;
+	border-radius: 10px;
+	padding: 0 36px;
+}
+.relSearch {
+	position: relative;
+	width: 650px;
+	@include marC;
+}
+.relSearch .icoSearch {
+	position: absolute;
+	top: 16px;
+	left: 10px;
+	font-size: 19px;
+}
+section.intro {
+}
+section.intro h1 {
+	@include h1;
+}
+section.intro p {
+	@include p1;
+}
+section.news {
+	background-color: $color-broBlu;
+}
+section.news img {
+	margin-top: 30px;
+}
+section.news h2 {
+	@include h2w;
+}
+section.news p {
+	@include p2w;
+	margin-bottom: 30px;
+}
+section.vids h2 {
+	@include h2;
+	@include mar20v;
+}
+section.vids .vidGal {
+	@include mar40vb;
+}
+footer {
+	background-color: $color-grey;
+}
+footer h4 {
+	@include h4;
+	@include mar40v;
+}
+footer ul {
+	@include mar0;
+}
+footer li {
+	@include liInline;
+}
+
+/* helper styles */
+.divFull {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.imgFull {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
