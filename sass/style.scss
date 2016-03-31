@@ -151,19 +151,11 @@ $width-lg: 1200px;
     margin: 0 0 40px 0;
     padding: 0;
 }
+
+/********** media queries **********/
 @mixin responsive($width) {
-	@if $width == lg {
-		@media only screen and (min-width: $width-lg) {
-			@content;
-		}
-	}
-	@else if $width == md {
-		@media only screen and (min-width: $width-md) {
-			@content;
-		}
-	}
-	@else if $width == sm {
-		@media only screen and (min-width: $width-sm) {
+	@if $width == xxs {
+		@media only screen and (max-width: $width-xxs) {
 			@content;
 		}
 	}
@@ -172,15 +164,22 @@ $width-lg: 1200px;
 			@content;
 		}
 	}
-	@else if $width == xxs {
-		@media only screen and (min-width: $width-xxs) {
+	@else if $width == sm {
+		@media only screen and (min-width: $width-sm) {
+			@content;
+		}
+	}
+	@else if $width == md {
+		@media only screen and (min-width: $width-md) {
+			@content;
+		}
+	}
+	@else if $width == lg {
+		@media only screen and (min-width: $width-lg) {
 			@content;
 		}
 	}
 }
-
-/********** media queries **********/
-
 
 /********** styles **********/
 html, body {
@@ -228,20 +227,23 @@ nav {
 	color: $color-broBlu;
 	text-align: right;
 	text-transform: uppercase;
+	display: block;
 	@include responsive(xxs) {
-		font-size: 8px;
+		display: none;
 	}
 	@include responsive(xs) {
-		font-size: 16px;
+		display: none;
 	}
 	@include responsive(sm) {
-		font-size: 20px;
+		display: none;
 	}
 	@include responsive(md) {
-		font-size: 24px;
+		font-size: 26px;
+		display: block;
 	}
 	@include responsive(lg) {
 		font-size: 28px;
+		display: block;
 	}
 }
 .navMain ul {
@@ -259,20 +261,23 @@ nav {
 	font-size: 30px;
 	color: $color-broBlu;
 	text-align: right;
+	display: block;
 	@include responsive(xxs) {
-		font-size: 8px;
+		display: none;
 	}
 	@include responsive(xs) {
-		font-size: 16px;
+		display: none;
 	}
 	@include responsive(sm) {
-		font-size: 20px;
+		display: none;
 	}
 	@include responsive(md) {
-		font-size: 24px;
+		font-size: 30px;
+		display: block;
 	}
 	@include responsive(lg) {
 		font-size: 30px;
+		display: block;
 	}
 }
 .navSec ul {
@@ -285,7 +290,27 @@ nav {
 .navSec a {
 	color: $color-broBlu;
 }
-
+.navMobile {
+	font-size: 30px;
+	color: $color-broBlu;
+	text-align: right;
+	display: none;
+	@include responsive(xxs) {
+		display: block;
+	}
+	@include responsive(xs) {
+		display: block;
+	}
+	@include responsive(sm) {
+		display: block;
+	}
+	@include responsive(md) {
+		display: none;
+	}
+	@include responsive(lg) {
+		display: none;
+	}
+}
 .prodSearch {
 	text-align: center;
 	color: $color-broBlu;

@@ -48,22 +48,25 @@ nav {
   font-size: 28px;
   color: #263b94;
   text-align: right;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 375px) {
+  text-transform: uppercase;
+  display: block; }
+  @media only screen and (max-width: 375px) {
     .navMain {
-      font-size: 8px; } }
+      display: none; } }
   @media only screen and (min-width: 480px) {
     .navMain {
-      font-size: 16px; } }
+      display: none; } }
   @media only screen and (min-width: 768px) {
     .navMain {
-      font-size: 20px; } }
+      display: none; } }
   @media only screen and (min-width: 1024px) {
     .navMain {
-      font-size: 24px; } }
+      font-size: 26px;
+      display: block; } }
   @media only screen and (min-width: 1200px) {
     .navMain {
-      font-size: 28px; } }
+      font-size: 28px;
+      display: block; } }
 
 .navMain ul {
   margin: 0;
@@ -84,22 +87,25 @@ nav {
   font-family: "open-sans-condensed", sans-serif;
   font-size: 30px;
   color: #263b94;
-  text-align: right; }
-  @media only screen and (min-width: 375px) {
+  text-align: right;
+  display: block; }
+  @media only screen and (max-width: 375px) {
     .navSec {
-      font-size: 8px; } }
+      display: none; } }
   @media only screen and (min-width: 480px) {
     .navSec {
-      font-size: 16px; } }
+      display: none; } }
   @media only screen and (min-width: 768px) {
     .navSec {
-      font-size: 20px; } }
+      display: none; } }
   @media only screen and (min-width: 1024px) {
     .navSec {
-      font-size: 24px; } }
+      font-size: 30px;
+      display: block; } }
   @media only screen and (min-width: 1200px) {
     .navSec {
-      font-size: 30px; } }
+      font-size: 30px;
+      display: block; } }
 
 .navSec ul {
   margin: 0;
@@ -115,6 +121,27 @@ nav {
 
 .navSec a {
   color: #263b94; }
+
+.navMobile {
+  font-size: 30px;
+  color: #263b94;
+  text-align: right;
+  display: none; }
+  @media only screen and (max-width: 375px) {
+    .navMobile {
+      display: block; } }
+  @media only screen and (min-width: 480px) {
+    .navMobile {
+      display: block; } }
+  @media only screen and (min-width: 768px) {
+    .navMobile {
+      display: block; } }
+  @media only screen and (min-width: 1024px) {
+    .navMobile {
+      display: none; } }
+  @media only screen and (min-width: 1200px) {
+    .navMobile {
+      display: none; } }
 
 .prodSearch {
   text-align: center;
@@ -133,7 +160,7 @@ nav {
   border-width: 1px;
   border-radius: 10px;
   padding: 0 36px; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     .prodSearch input {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -160,7 +187,7 @@ nav {
   top: 16px;
   left: 10px;
   font-size: 19px; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     .relSearch .icoSearch {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -182,7 +209,7 @@ section.intro h1 {
   font-weight: bold;
   color: #263b94;
   text-transform: uppercase; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     section.intro h1 {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -204,7 +231,7 @@ section.intro p {
   line-height: 38px;
   color: #4c4c4c;
   padding: 10px 0; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     section.intro p {
       font-size: 8px;
       line-height: 18px; } }
@@ -237,7 +264,7 @@ section.news h2 {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     section.news h2 {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -260,7 +287,7 @@ section.news p {
   color: #fff;
   padding: 10px 0;
   margin-bottom: 30px; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     section.news p {
       font-size: 8px;
       line-height: 18px; } }
@@ -289,7 +316,7 @@ section.vids h2 {
   text-transform: uppercase;
   margin: 20px 0;
   padding: 0; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     section.vids h2 {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -320,7 +347,7 @@ footer h4 {
   text-transform: uppercase;
   margin: 40px 0 0 0;
   padding: 0; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     footer h4 {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -361,7 +388,7 @@ footer .nav3Login .txtLog {
   margin: 10px 0;
   padding: 0;
   padding-left: 6px; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     footer .nav3Login .txtLog {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -389,7 +416,7 @@ footer .nav3Login .butSub {
   margin: 10px 0;
   padding: 0;
   border-radius: 10px; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     footer .nav3Login .butSub {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -410,7 +437,7 @@ footer .fooSoMe {
   text-align: center;
   margin: 20px 0;
   padding: 0; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     footer .fooSoMe {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
@@ -446,7 +473,7 @@ footer .fooCopy {
   text-align: center;
   margin: 0 0 20px 0;
   padding: 0; }
-  @media only screen and (min-width: 375px) {
+  @media only screen and (max-width: 375px) {
     footer .fooCopy {
       font-size: 8px; } }
   @media only screen and (min-width: 480px) {
