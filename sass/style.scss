@@ -9,7 +9,11 @@ $color-black: #000;
 $font-main: "myriad-pro", sans-serif;
 $font-second: "open-sans", sans-serif;
 $font-third: "open-sans-condensed", sans-serif;
-
+$width-xxs: 375px;
+$width-xs: 480px;
+$width-sm: 768px;
+$width-md: 1024px;
+$width-lg: 1200px;
 
 /********** mixins **********/
 @mixin h1 {
@@ -123,6 +127,10 @@ $font-third: "open-sans-condensed", sans-serif;
     margin: 20px 0;
     padding: 0;
 }
+@mixin mar20vb {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
 @mixin mar40 {
     margin: 40px;
     padding: 0;
@@ -143,6 +151,35 @@ $font-third: "open-sans-condensed", sans-serif;
     margin: 0 0 40px 0;
     padding: 0;
 }
+@mixin responsive($width) {
+	@if $width == lg {
+		@media only screen and (min-width: $width-lg) {
+			@content;
+		}
+	}
+	@else if $width == md {
+		@media only screen and (min-width: $width-md) {
+			@content;
+		}
+	}
+	@else if $width == sm {
+		@media only screen and (min-width: $width-sm) {
+			@content;
+		}
+	}
+	@else if $width == xs {
+		@media only screen and (min-width: $width-xs) {
+			@content;
+		}
+	}
+	@else if $width == xxs {
+		@media only screen and (min-width: $width-xxs) {
+			@content;
+		}
+	}
+}
+
+/********** media queries **********/
 
 
 /********** styles **********/
@@ -191,6 +228,21 @@ nav {
 	color: $color-broBlu;
 	text-align: right;
 	text-transform: uppercase;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 .navMain ul {
 	@include mar0;
@@ -207,6 +259,21 @@ nav {
 	font-size: 30px;
 	color: $color-broBlu;
 	text-align: right;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 30px;
+	}
 }
 .navSec ul {
 	@include mar0;
@@ -235,6 +302,21 @@ nav {
 	border-width: 1px;
 	border-radius: 10px;
 	padding: 0 36px;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 18px;
+	}
+	@include responsive(md) {
+		font-size: 20px;
+	}
+	@include responsive(lg) {
+		font-size: 22px;
+	}
 }
 .relSearch {
 	position: relative;
@@ -246,14 +328,62 @@ nav {
 	top: 16px;
 	left: 10px;
 	font-size: 19px;
-}
-section.intro {
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 18px;
+	}
+	@include responsive(md) {
+		font-size: 19px;
+	}
+	@include responsive(lg) {
+		font-size: 19px;
+	}
 }
 section.intro h1 {
 	@include h1;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 33px;
+	}
 }
 section.intro p {
 	@include p1;
+	@include responsive(xxs) {
+		font-size: 8px;
+		line-height: 18px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+		line-height: 32px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+		line-height: 38px;
+	}
+	@include responsive(lg) {
+		font-size: 24px;
+		line-height: 38px;
+	}
 }
 section.news {
 	background-color: $color-broBlu;
@@ -263,14 +393,64 @@ section.news img {
 }
 section.news h2 {
 	@include h2w;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 section.news p {
 	@include p2w;
 	margin-bottom: 30px;
+	@include responsive(xxs) {
+		font-size: 8px;
+		line-height: 18px;
+	}
+	@include responsive(xs) {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	@include responsive(sm) {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	@include responsive(md) {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	@include responsive(lg) {
+		font-size: 18px;
+		line-height: 28px;
+	}
 }
 section.vids h2 {
 	@include h2;
 	@include mar20v;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 section.vids .vidGal {
 	@include mar40vb;
@@ -281,6 +461,21 @@ footer {
 footer h4 {
 	@include h4;
 	@include mar40vt;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 footer ul {
 	@include mar10v;
@@ -304,6 +499,21 @@ footer .nav3Login .txtLog {
 	border-width: 1px;
 	@include mar10v;
 	padding-left: 6px;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 footer .nav3Login .butSub {
 	width: 184px;
@@ -316,11 +526,41 @@ footer .nav3Login .butSub {
 	background-color: $color-broBlu;
 	@include mar10v;
 	border-radius: 10px;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 footer .fooSoMe {
 	font-size: 40px;
 	text-align: center;
 	@include mar20v;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
 footer .fooSoMe ul {
 	@include mar0;
@@ -335,20 +575,21 @@ footer .fooSoMe a {
 footer .fooCopy {
 	color: $color-broBlu;
 	text-align: center;
+	@include mar20vb;
+	@include responsive(xxs) {
+		font-size: 8px;
+	}
+	@include responsive(xs) {
+		font-size: 16px;
+	}
+	@include responsive(sm) {
+		font-size: 20px;
+	}
+	@include responsive(md) {
+		font-size: 24px;
+	}
+	@include responsive(lg) {
+		font-size: 28px;
+	}
 }
-
-/* helper styles */
-.divFull {
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-.imgFull {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-
-
 

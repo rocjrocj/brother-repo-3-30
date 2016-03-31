@@ -1,6 +1,7 @@
 /* Sass Document */
 /********** vars **********/
 /********** mixins **********/
+/********** media queries **********/
 /********** styles **********/
 html, body {
   position: relative; }
@@ -48,6 +49,21 @@ nav {
   color: #263b94;
   text-align: right;
   text-transform: uppercase; }
+  @media only screen and (min-width: 375px) {
+    .navMain {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    .navMain {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    .navMain {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .navMain {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    .navMain {
+      font-size: 28px; } }
 
 .navMain ul {
   margin: 0;
@@ -69,6 +85,21 @@ nav {
   font-size: 30px;
   color: #263b94;
   text-align: right; }
+  @media only screen and (min-width: 375px) {
+    .navSec {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    .navSec {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    .navSec {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    .navSec {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    .navSec {
+      font-size: 30px; } }
 
 .navSec ul {
   margin: 0;
@@ -102,6 +133,21 @@ nav {
   border-width: 1px;
   border-radius: 10px;
   padding: 0 36px; }
+  @media only screen and (min-width: 375px) {
+    .prodSearch input {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    .prodSearch input {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    .prodSearch input {
+      font-size: 18px; } }
+  @media only screen and (min-width: 1024px) {
+    .prodSearch input {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1200px) {
+    .prodSearch input {
+      font-size: 22px; } }
 
 .relSearch {
   position: relative;
@@ -114,6 +160,21 @@ nav {
   top: 16px;
   left: 10px;
   font-size: 19px; }
+  @media only screen and (min-width: 375px) {
+    .relSearch .icoSearch {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    .relSearch .icoSearch {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    .relSearch .icoSearch {
+      font-size: 18px; } }
+  @media only screen and (min-width: 1024px) {
+    .relSearch .icoSearch {
+      font-size: 19px; } }
+  @media only screen and (min-width: 1200px) {
+    .relSearch .icoSearch {
+      font-size: 19px; } }
 
 section.intro h1 {
   font-family: "open-sans-condensed", sans-serif;
@@ -121,6 +182,21 @@ section.intro h1 {
   font-weight: bold;
   color: #263b94;
   text-transform: uppercase; }
+  @media only screen and (min-width: 375px) {
+    section.intro h1 {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    section.intro h1 {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    section.intro h1 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    section.intro h1 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    section.intro h1 {
+      font-size: 33px; } }
 
 section.intro p {
   font-family: "open-sans", sans-serif;
@@ -128,6 +204,26 @@ section.intro p {
   line-height: 38px;
   color: #4c4c4c;
   padding: 10px 0; }
+  @media only screen and (min-width: 375px) {
+    section.intro p {
+      font-size: 8px;
+      line-height: 18px; } }
+  @media only screen and (min-width: 480px) {
+    section.intro p {
+      font-size: 16px;
+      line-height: 30px; } }
+  @media only screen and (min-width: 768px) {
+    section.intro p {
+      font-size: 20px;
+      line-height: 32px; } }
+  @media only screen and (min-width: 1024px) {
+    section.intro p {
+      font-size: 24px;
+      line-height: 38px; } }
+  @media only screen and (min-width: 1200px) {
+    section.intro p {
+      font-size: 24px;
+      line-height: 38px; } }
 
 section.news {
   background-color: #263b94; }
@@ -141,6 +237,21 @@ section.news h2 {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase; }
+  @media only screen and (min-width: 375px) {
+    section.news h2 {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    section.news h2 {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    section.news h2 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    section.news h2 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    section.news h2 {
+      font-size: 28px; } }
 
 section.news p {
   font-family: "open-sans", sans-serif;
@@ -149,6 +260,26 @@ section.news p {
   color: #fff;
   padding: 10px 0;
   margin-bottom: 30px; }
+  @media only screen and (min-width: 375px) {
+    section.news p {
+      font-size: 8px;
+      line-height: 18px; } }
+  @media only screen and (min-width: 480px) {
+    section.news p {
+      font-size: 12px;
+      line-height: 18px; } }
+  @media only screen and (min-width: 768px) {
+    section.news p {
+      font-size: 14px;
+      line-height: 24px; } }
+  @media only screen and (min-width: 1024px) {
+    section.news p {
+      font-size: 18px;
+      line-height: 28px; } }
+  @media only screen and (min-width: 1200px) {
+    section.news p {
+      font-size: 18px;
+      line-height: 28px; } }
 
 section.vids h2 {
   font-family: "open-sans-condensed", sans-serif;
@@ -158,6 +289,21 @@ section.vids h2 {
   text-transform: uppercase;
   margin: 20px 0;
   padding: 0; }
+  @media only screen and (min-width: 375px) {
+    section.vids h2 {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    section.vids h2 {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    section.vids h2 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    section.vids h2 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    section.vids h2 {
+      font-size: 28px; } }
 
 section.vids .vidGal {
   margin: 0 0 40px 0;
@@ -174,6 +320,21 @@ footer h4 {
   text-transform: uppercase;
   margin: 40px 0 0 0;
   padding: 0; }
+  @media only screen and (min-width: 375px) {
+    footer h4 {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    footer h4 {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    footer h4 {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    footer h4 {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    footer h4 {
+      font-size: 28px; } }
 
 footer ul {
   margin: 10px 0;
@@ -200,6 +361,21 @@ footer .nav3Login .txtLog {
   margin: 10px 0;
   padding: 0;
   padding-left: 6px; }
+  @media only screen and (min-width: 375px) {
+    footer .nav3Login .txtLog {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    footer .nav3Login .txtLog {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    footer .nav3Login .txtLog {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    footer .nav3Login .txtLog {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    footer .nav3Login .txtLog {
+      font-size: 28px; } }
 
 footer .nav3Login .butSub {
   width: 184px;
@@ -213,12 +389,42 @@ footer .nav3Login .butSub {
   margin: 10px 0;
   padding: 0;
   border-radius: 10px; }
+  @media only screen and (min-width: 375px) {
+    footer .nav3Login .butSub {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    footer .nav3Login .butSub {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    footer .nav3Login .butSub {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    footer .nav3Login .butSub {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    footer .nav3Login .butSub {
+      font-size: 28px; } }
 
 footer .fooSoMe {
   font-size: 40px;
   text-align: center;
   margin: 20px 0;
   padding: 0; }
+  @media only screen and (min-width: 375px) {
+    footer .fooSoMe {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    footer .fooSoMe {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    footer .fooSoMe {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    footer .fooSoMe {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    footer .fooSoMe {
+      font-size: 28px; } }
 
 footer .fooSoMe ul {
   margin: 0;
@@ -237,15 +443,21 @@ footer .fooSoMe a {
 
 footer .fooCopy {
   color: #263b94;
-  text-align: center; }
-
-/* helper styles */
-.divFull {
-  position: relative;
-  width: 100%;
-  height: 100%; }
-
-.imgFull {
-  position: relative;
-  width: 100%;
-  height: auto; }
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0; }
+  @media only screen and (min-width: 375px) {
+    footer .fooCopy {
+      font-size: 8px; } }
+  @media only screen and (min-width: 480px) {
+    footer .fooCopy {
+      font-size: 16px; } }
+  @media only screen and (min-width: 768px) {
+    footer .fooCopy {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1024px) {
+    footer .fooCopy {
+      font-size: 24px; } }
+  @media only screen and (min-width: 1200px) {
+    footer .fooCopy {
+      font-size: 28px; } }
