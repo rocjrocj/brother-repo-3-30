@@ -9,34 +9,80 @@ html, body {
 body {
   background-color: #fff; }
 
+.slider {
+  display: none; }
+  @media only screen and (min-width: 480px) {
+    .slider {
+      display: block; } }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center; }
+  	/*text-align: center;
+  	font-size: 18px;
+  	/* Center slide text vertically *
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-box-pack: center;
+  	-ms-flex-pack: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	-webkit-box-align: center;
+  	-ms-flex-align: center;
+  	-webkit-align-items: center;
+  	align-items: center;
+          width: 100%;
+          padding-top: 50px;
+          padding-bottom: 50px;*/ }
 
-.swiper-slide img {
-  /*width: 100%;
-  height: auto;*/ }
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 150px; }
+  @media only screen and (max-width: 375px) {
+    .swiper-slide {
+      width: 200px;
+      height: 150px; } }
+  @media only screen and (min-width: 480px) {
+    .swiper-slide {
+      width: 300px;
+      height: 200px; } }
+  @media only screen and (min-width: 768px) {
+    .swiper-slide {
+      width: 400px;
+      height: 400px; } }
+  @media only screen and (min-width: 1024px) {
+    .swiper-slide {
+      width: 761px;
+      height: 450px; } }
+  @media only screen and (min-width: 1200px) {
+    .swiper-slide {
+      width: 761px;
+      height: 450px; } }
+
+.swiper-pagination {
+  /*position: absolute;
+  top: 400px;*/ }
+
+/*.swiper-slide img {
+	width: 100%;
+	height: auto;
+}*/
+.nonSwiper {
+  display: block; }
+  @media only screen and (min-width: 480px) {
+    .nonSwiper {
+      display: none; } }
 
 .logo {
   margin: 20px 0;
-  padding: 0; }
+  padding: 0;
+  min-width: 100px; }
 
 nav {
   margin: 20px 0;
@@ -49,7 +95,7 @@ nav {
   color: #263b94;
   text-align: right;
   text-transform: uppercase;
-  display: block; }
+  display: none; }
   @media only screen and (max-width: 375px) {
     .navMain {
       display: none; } }
@@ -88,7 +134,7 @@ nav {
   font-size: 30px;
   color: #263b94;
   text-align: right;
-  display: block; }
+  display: none; }
   @media only screen and (max-width: 375px) {
     .navSec {
       display: none; } }
@@ -123,19 +169,14 @@ nav {
   color: #263b94; }
 
 .navMobile {
-  font-size: 30px;
+  font-size: 23px;
   color: #263b94;
   text-align: right;
-  display: none; }
-  @media only screen and (max-width: 375px) {
-    .navMobile {
-      display: block; } }
-  @media only screen and (min-width: 480px) {
-    .navMobile {
-      display: block; } }
+  display: block; }
   @media only screen and (min-width: 768px) {
     .navMobile {
-      display: block; } }
+      display: block;
+      font-size: 30px; } }
   @media only screen and (min-width: 1024px) {
     .navMobile {
       display: none; } }
@@ -150,77 +191,104 @@ nav {
   padding: 0; }
 
 .prodSearch input {
-  width: 650px;
-  height: 50px;
+  width: 300px;
+  height: 20px;
   font-family: "open-sans", sans-serif;
-  font-size: 22px;
+  font-size: 12px;
   text-transform: uppercase;
   border-style: solid;
   border-color: #263b94;
   border-width: 1px;
-  border-radius: 10px;
-  padding: 0 36px; }
+  border-radius: 5px;
+  padding: 0 10px; }
   @media only screen and (max-width: 375px) {
     .prodSearch input {
-      font-size: 8px; } }
+      width: 300px;
+      height: 20px;
+      font-size: 12px;
+      border-radius: 5px;
+      padding: 0 10px; } }
   @media only screen and (min-width: 480px) {
     .prodSearch input {
-      font-size: 16px; } }
+      width: 400px;
+      height: 30px;
+      font-size: 16px;
+      border-radius: 10px;
+      padding: 0 10px; } }
   @media only screen and (min-width: 768px) {
     .prodSearch input {
-      font-size: 18px; } }
+      width: 500px;
+      height: 40px;
+      font-size: 18px;
+      border-radius: 10px;
+      padding: 0 10px; } }
   @media only screen and (min-width: 1024px) {
     .prodSearch input {
-      font-size: 20px; } }
+      width: 650px;
+      height: 50px;
+      font-size: 20px;
+      border-radius: 10px;
+      padding: 0 36px; } }
   @media only screen and (min-width: 1200px) {
     .prodSearch input {
-      font-size: 22px; } }
+      width: 650px;
+      height: 50px;
+      font-size: 22px;
+      border-radius: 10px;
+      padding: 0 36px; } }
 
 .relSearch {
   position: relative;
-  width: 650px;
+  width: 300px;
   margin: 0 auto;
   padding: 0; }
+  @media only screen and (max-width: 375px) {
+    .relSearch {
+      width: 300px; } }
+  @media only screen and (min-width: 480px) {
+    .relSearch {
+      width: 400px; } }
+  @media only screen and (min-width: 768px) {
+    .relSearch {
+      width: 500px; } }
+  @media only screen and (min-width: 1024px) {
+    .relSearch {
+      width: 650px; } }
+  @media only screen and (min-width: 1200px) {
+    .relSearch {
+      width: 650px; } }
 
 .relSearch .icoSearch {
   position: absolute;
   top: 16px;
-  left: 10px;
-  font-size: 19px; }
-  @media only screen and (max-width: 375px) {
-    .relSearch .icoSearch {
-      font-size: 8px; } }
-  @media only screen and (min-width: 480px) {
-    .relSearch .icoSearch {
-      font-size: 16px; } }
-  @media only screen and (min-width: 768px) {
-    .relSearch .icoSearch {
-      font-size: 18px; } }
+  left: 8px;
+  font-size: 19px;
+  display: none; }
   @media only screen and (min-width: 1024px) {
     .relSearch .icoSearch {
-      font-size: 19px; } }
+      display: block; } }
   @media only screen and (min-width: 1200px) {
     .relSearch .icoSearch {
-      font-size: 19px; } }
+      display: block; } }
 
 section.intro h1 {
   font-family: "open-sans-condensed", sans-serif;
-  font-size: 33px;
+  font-size: 22px;
   font-weight: bold;
   color: #263b94;
   text-transform: uppercase; }
   @media only screen and (max-width: 375px) {
     section.intro h1 {
-      font-size: 8px; } }
+      font-size: 22px; } }
   @media only screen and (min-width: 480px) {
     section.intro h1 {
-      font-size: 16px; } }
+      font-size: 26px; } }
   @media only screen and (min-width: 768px) {
     section.intro h1 {
-      font-size: 20px; } }
+      font-size: 30px; } }
   @media only screen and (min-width: 1024px) {
     section.intro h1 {
-      font-size: 24px; } }
+      font-size: 33px; } }
   @media only screen and (min-width: 1200px) {
     section.intro h1 {
       font-size: 33px; } }

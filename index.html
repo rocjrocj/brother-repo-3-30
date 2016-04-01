@@ -73,9 +73,9 @@
     </div>
   </div>
 </header>
-<section role="slider"> 
+<section role="slider" class="slider"> 
   <!-- swiper -->
-  <div class="swiper-container swiper-container">
+  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="images/printer-big.png" class="img-responsive" alt=""/></div>
       <div class="swiper-slide"><img src="images/printer-big.png" class="img-responsive" alt=""/></div>
@@ -84,9 +84,15 @@
       <div class="swiper-slide"><img src="images/printer-big.png" class="img-responsive" alt=""/></div>
       <div class="swiper-slide"><img src="images/printer-big.png" class="img-responsive" alt=""/></div>
     </div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
   </div>
   <!-- swiper end --> 
 </section>
+<section role="nonSwiper" class="nonSwiper"><img src="images/printer-big.png" width="303" class="img-responsive" alt=""/></section>
 <section class="search">
   <div class="container">
     <div class="row">
@@ -225,9 +231,30 @@
 <script src="bower_components/swiper/dist/js/swiper.js"></script> 
 <!-- Initialize Swiper --> 
 <script>
-    var swiperH = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-		grabCursor: true
+    //var swiperH = new Swiper('.swiper-container', {
+//        spaceBetween: 30,
+//		grabCursor: true
+//    });
+	
+	
+	var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+		initialSlide: 1,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+		spaceBetween: 500,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 0,
+            stretch: 50,
+            depth: 500,
+            modifier: 1,
+            slideShadows : false
+        }
     });
 </script> 
 
