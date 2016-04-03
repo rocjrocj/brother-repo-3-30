@@ -253,7 +253,9 @@ body {
 	height: auto;
 }*/
 .nonSwiper {
+	width: 303px;
 	display: block;
+	@include marC;
 	@include responsive(xs) {
 		display: none;
 	}

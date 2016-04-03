@@ -74,7 +74,10 @@ body {
 	height: auto;
 }*/
 .nonSwiper {
-  display: block; }
+  width: 303px;
+  display: block;
+  margin: 0 auto;
+  padding: 0; }
   @media only screen and (min-width: 480px) {
     .nonSwiper {
       display: none; } }
