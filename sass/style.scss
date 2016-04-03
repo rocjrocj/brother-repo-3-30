@@ -25,7 +25,8 @@ $width-lg: 1200px;
 }
 @mixin h2 {
 	font-family: $font-third;
-	font-size: 28px;
+	font-size: 16px;
+	line-height: 20px;
 	font-weight: bold;
 	color: $color-broBlu;
 	text-transform: uppercase;
@@ -46,10 +47,9 @@ $width-lg: 1200px;
 }
 @mixin p1 {
 	font-family: $font-second;
-	font-size: 24px;
-	line-height: 38px;
+	font-size: 14px;
+	line-height: 20px;
 	color: $color-txt;
-	padding: 10px 0;
 }
 @mixin p2 {
 	font-family: $font-second;
@@ -77,6 +77,10 @@ $width-lg: 1200px;
 }
 @mixin mar0 {
     margin: 0;
+    padding: 0;
+}
+@mixin mar3v {
+    margin: 3px 0;
     padding: 0;
 }
 @mixin mar5 {
@@ -109,6 +113,10 @@ $width-lg: 1200px;
 }
 @mixin mar10v {
     margin: 10px 0;
+    padding: 0;
+}
+@mixin mar10vc {
+    margin: 10px auto;
     padding: 0;
 }
 @mixin mar20 {
@@ -188,6 +196,58 @@ html, body {
 body {
  	background-color: $color-white;
 }
+/* mobile views */
+.mobViews {
+	display: block;
+}
+.mobPho {
+	width: 303px;
+	@include mar10vc;
+}
+.mobFea {
+	@include mar20h;
+}
+.mobFea h1 {
+	@include h1;
+}
+.mobFea p {
+	@include p1;
+	margin: 3px 0 15px 0;
+	padding: 0;
+}
+.mobFea h2 {
+	@include h2;
+	@include mar3v;
+}
+.mobFea h2 a {
+	color: $color-broBlu;
+}
+.mobSlider {
+	margin: 20px 0 0 0;
+}
+.mobSearch {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: $color-broBlu;
+	text-align: center;
+	color: $color-white;
+	padding: 15px 0;
+}
+.mobSearch input {
+	background-color: $color-broBlu;
+	width: 275px;
+	height: 35px;
+	font-family: $font-second;
+	font-size: 14px;
+	text-transform: uppercase;
+    border-style: solid;
+	border-color: $color-white;
+	border-width: 1px;
+	border-radius: 5px;
+	padding: 0 10px;
+}
+
 .slider {
 	display: none;
 	@include responsive(xs) {
@@ -251,7 +311,7 @@ body {
 /*.swiper-slide img {
 	width: 100%;
 	height: auto;
-}*/
+}
 .nonSwiper {
 	width: 303px;
 	display: block;
@@ -259,8 +319,7 @@ body {
 	@include responsive(xs) {
 		display: none;
 	}
-}
-
+}*/
 .logo {
 	@include mar20v;
 	min-width: 100px;
@@ -354,10 +413,15 @@ nav {
 		display: none;
 	}
 }
+/* non mobile views */
+.nonMob {
+	display: none;
+}
 .prodSearch {
 	text-align: center;
 	color: $color-broBlu;
 	@include mar20v;
+	display: none;
 }
 .prodSearch input {
 	width: 300px;
@@ -686,5 +750,8 @@ footer .fooCopy {
 	@include responsive(lg) {
 		font-size: 28px;
 	}
+}
+.myOlark {
+	display: none;
 }
 

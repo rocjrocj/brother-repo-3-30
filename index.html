@@ -95,15 +95,13 @@
 </section>
 
 <!-- mobile views -->
-<section role="mobViews">
-	<div class="mobPho"><img src="images/printer-big.png" class="img-responsive" alt=""/></div>
+<section role="mobViews" class="mobViews">
+	<div class="mobPho"><img src="images/printer-sm.png" class="img-responsive" alt=""/></div>
 	<div class="mobFea">
 		<h1>New Product Launch GT-381</h1>
-		<p>Lorem ipsum.</p>
-		<ul>
-			<li><a href="">Another News Item</a></li>
-			<li><a href="">More Good News</a></li>
-		</ul>
+		<p>GT-3 Series Garment Printer with CMYK and 4 White Print Heads.</p>
+		<h2><a href="">Another News Item</a></h2>
+		<h2><a href="">More Good News</a></h2>
 	</div>
 	<section role="mobSlider" class="mobSlider"> 
 		<!-- swiper -->
@@ -123,17 +121,19 @@
 			<div class="swiper-button-prev"></div>
 		</div>
 		<!-- swiper end --> 
-	</section>
-	<section class="mobSearch">
+	
+	<div class="mobSearch">
 		<form>
 			<div class="mobRelSearch"><span class="glyphicon glyphicon-search mobIcoSearch"></span>
 				<input type="text" placeholder="Search Products">
 			</div>
 		</form>
-	</section>
+	</div>
 </section>
 <!-- end mobile views -->
 
+<!-- non-mobile views -->
+<div class="nonMob">
 <section class="search">
 	<div class="container">
 		<div class="row">
@@ -261,6 +261,7 @@
 		</div>
 	</div>
 </footer>
+</div>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="bower_components/bootstrap/dist/js/jquery-1.11.3.min.js"></script> 
@@ -319,9 +320,9 @@
         }
     });
 </script> 
-
+<div class="myOlark">
 <!-- begin olark code --> 
-<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+<!--<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
 f[z]=function(){
 (a.s=a.s||[]).push(arguments)};var a=f[z]._={
 },q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
@@ -341,7 +342,8 @@ loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure"
 olark.identify('2584-881-10-8515');/*]]>*/</script>
 <noscript>
 <a href="https://www.olark.com/site/2584-881-10-8515/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a>
-</noscript>
+</noscript>-->
 <!-- end olark code -->
+</div>
 </body>
 </html>

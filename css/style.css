@@ -9,6 +9,72 @@ html, body {
 body {
   background-color: #fff; }
 
+/* mobile views */
+.mobViews {
+  display: block; }
+
+.mobPho {
+  width: 303px;
+  margin: 10px auto;
+  padding: 0; }
+
+.mobFea {
+  margin: 0 20px;
+  padding: 0; }
+
+.mobFea h1 {
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #263b94;
+  text-transform: uppercase; }
+
+.mobFea p {
+  font-family: "open-sans", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4c4c4c;
+  margin: 3px 0 15px 0;
+  padding: 0; }
+
+.mobFea h2 {
+  font-family: "open-sans-condensed", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #263b94;
+  text-transform: uppercase;
+  margin: 3px 0;
+  padding: 0; }
+
+.mobFea h2 a {
+  color: #263b94; }
+
+.mobSlider {
+  margin: 20px 0 0 0; }
+
+.mobSearch {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #263b94;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0; }
+
+.mobSearch input {
+  background-color: #263b94;
+  width: 275px;
+  height: 35px;
+  font-family: "open-sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 0 10px; }
+
 .slider {
   display: none; }
   @media only screen and (min-width: 480px) {
@@ -72,16 +138,15 @@ body {
 /*.swiper-slide img {
 	width: 100%;
 	height: auto;
-}*/
+}
 .nonSwiper {
-  width: 303px;
-  display: block;
-  margin: 0 auto;
-  padding: 0; }
-  @media only screen and (min-width: 480px) {
-    .nonSwiper {
-      display: none; } }
-
+	width: 303px;
+	display: block;
+	@include marC;
+	@include responsive(xs) {
+		display: none;
+	}
+}*/
 .logo {
   margin: 20px 0;
   padding: 0;
@@ -187,11 +252,16 @@ nav {
     .navMobile {
       display: none; } }
 
+/* non mobile views */
+.nonMob {
+  display: none; }
+
 .prodSearch {
   text-align: center;
   color: #263b94;
   margin: 20px 0;
-  padding: 0; }
+  padding: 0;
+  display: none; }
 
 .prodSearch input {
   width: 300px;
@@ -298,10 +368,9 @@ section.intro h1 {
 
 section.intro p {
   font-family: "open-sans", sans-serif;
-  font-size: 24px;
-  line-height: 38px;
-  color: #4c4c4c;
-  padding: 10px 0; }
+  font-size: 14px;
+  line-height: 20px;
+  color: #4c4c4c; }
   @media only screen and (max-width: 375px) {
     section.intro p {
       font-size: 8px;
@@ -381,7 +450,8 @@ section.news p {
 
 section.vids h2 {
   font-family: "open-sans-condensed", sans-serif;
-  font-size: 28px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #263b94;
   text-transform: uppercase;
@@ -559,3 +629,6 @@ footer .fooCopy {
   @media only screen and (min-width: 1200px) {
     footer .fooCopy {
       font-size: 28px; } }
+
+.myOlark {
+  display: none; }
