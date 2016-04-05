@@ -12,6 +12,9 @@ body {
 /* mobile views */
 .mobViews {
   display: block; }
+  @media only screen and (min-width: 480px) {
+    .mobViews {
+      display: none; } }
 
 .mobPho {
   width: 303px;
@@ -255,6 +258,9 @@ nav {
 /* non mobile views */
 .nonMob {
   display: none; }
+  @media only screen and (min-width: 480px) {
+    .nonMob {
+      display: block; } }
 
 .prodSearch {
   text-align: center;

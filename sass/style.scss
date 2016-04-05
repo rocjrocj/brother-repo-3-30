@@ -199,6 +199,9 @@ body {
 /* mobile views */
 .mobViews {
 	display: block;
+	@include responsive(xs) {
+		display: none;
+	}
 }
 .mobPho {
 	width: 303px;
@@ -416,6 +419,9 @@ nav {
 /* non mobile views */
 .nonMob {
 	display: none;
+	@include responsive(xs) {
+		display: block;
+	}
 }
 .prodSearch {
 	text-align: center;
