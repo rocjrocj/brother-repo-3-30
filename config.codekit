@@ -4212,6 +4212,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/pho-sm-all.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47615,
+		"inputAbbreviatedPath": "\/images\/pho-sm-all.png",
+		"outputAbbreviatedPath": "\/images\/pho-sm-all.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/printer-big.png": {
 		"fileType": 32768,
 		"ignore": 0,
